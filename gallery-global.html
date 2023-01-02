@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Global Gallery | CSS</title>
+    <style>
+        body {
+            background-color: #ecb3ff;
+        }
+        img {
+            width: 200px;
+            border: 20px solid #e6ccff;
+
+            margin-right: -122px;  /* (200px:2) + 20px + (4px:2) = 122px */
+            margin-left: -122px;
+
+        }
+        #gallery {
+            margin-top: 100px;
+            text-align: center;
+            /* border: 1px solid brown; */
+        }
+
+        .i-1 {
+           /*---- NEW ----*/
+           transform: rotate(-40deg);
+           border-color: #b366ff;
+           /*---- NEW ----*/
+        }
+
+        .i-2 {
+           transform: rotate(-20deg);
+           border-color: #bf80ff;
+        }
+
+        .i-3 {
+           transform: rotate(0deg);
+           border-color: #cc99ff;
+        }
+
+        .i-4 {
+           transform: rotate(20deg);
+           border-color: #d9b3ff;
+        }
+
+        .i-5 {
+           transform: rotate(40deg);
+        }
+    </style>
+</head>
+<body>
+
+    <!--
+        NOTICE!:
+           parent> child blocks overlap vertical margin at the top and bottom of the parent
+
+
+        ----------------------------------------------------- WINDOW --------------------------------------
+                                                    ^
+                                                    ^
+                                                    ^
+                           ^                        ^
+        ----------- BODY --------  >   ------- P --------
+    -->
+
+    <p id="gallery">
+        <img class="i-1" src="https://i.picsum.photos/id/439/400/600.jpg?hmac=MGS7q3AGF8jdgA0t9DJZZR2ZHD4Oxz3O5Ifw_nMI7eo" alt="">
+        <img class="i-2"src="https://i.picsum.photos/id/222/400/600.jpg?hmac=J5dlEy3zbCjDxoJ9k8lK6fvhDrj6QqS74qUta-_WpCY" alt="">
+        <img class="i-3"src="https://i.picsum.photos/id/971/400/600.jpg?hmac=VXswb2atu9o549Ypn30p3nbLNBEkHgX10uci_KJ7HJw" alt="">
+        <img class="i-4"src="https://i.picsum.photos/id/847/400/600.jpg?hmac=2DcacQS5rhsP18UQMkVI1GPHVGnPHJfk2OvF4_dRs_w" alt="">
+        <img class="i-5"src="https://i.picsum.photos/id/876/400/600.jpg?hmac=t2sGgUnkU6V0AHOngbl60-kVcN3t8Tpu5RydPnvQ0YU" alt="">
+
+    </p>
+
+    <!--
+        HW1:
+          reverse the rotation order
+    -->
+    
+</body>
+</html>

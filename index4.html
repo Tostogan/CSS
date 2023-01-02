@@ -1,0 +1,118 @@
+<!--
+    d. pseudo selectors
+
+    * Location
+    :link
+    :visited
+    :target
+
+    * User action
+    :hover
+    :active
+    :focus
+
+    * The Input
+    :checked
+    :valid
+    :invalid
+
+    * Tree-structural
+    :first-child
+    :nth-child(n)
+    :last-child
+
+    * Logical
+    :not (selector)
+
+    * Element
+    ::before
+    ::after
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Pseudo selectors | Directory Tree</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .tree {
+            list-style-type:"┠";
+            font-size: 64px;
+
+        }
+
+        .folder {
+            color: white;
+            /* border: 1px solid greenyellow; */
+            /* height: 64px; */
+            padding: 24px 0 24px 72px;
+
+            /* NEW */
+            background-image: url(https://icons.iconarchive.com/icons/gakuseisean/aire/64/Search-Computer-icon.png);
+            background-repeat: no-repeat;
+            line-height: 12px;
+
+            font-size: 18px;
+
+        }
+
+        .folder:last-child {
+            list-style-type: "┗";
+
+        }
+
+        .empty {
+            background-image: url(https://icons.iconarchive.com/icons/gakuseisean/aire/64/Documents-icon.png);
+        }
+
+        .name {
+            font-size: 10px;
+        }
+
+        .file {
+            color: white;
+            /* border: 1px solid greenyellow; */
+            /* height: 64px; */
+            padding: 24px 0 24px 72px;
+
+            /* NEW */
+            background-image: url(https://icons.iconarchive.com/icons/gakuseisean/aire/64/Download-Folder-icon.png);
+            background-repeat: no-repeat;
+            line-height: 18px;
+
+            font-size: 18px;
+
+        }
+
+        .file:last-child {
+            list-style-type: "┗";
+        }
+
+
+    </style>
+</head>
+<body>
+    <ul class="tree">
+        <li class="folder">
+            <div class="name">PROJECT [DONE]</div>
+            <!-- nested list -->
+            <ul class="tree">
+                <li class="file"><div class="name">File 1</div></li>
+                <li class="file"><div class="name">File 2</div></li>
+            </ul>
+        </li>
+        <li class="folder">
+            <div class="name">PROJECT [NOW]</div>
+        </li>
+        <li class="folder empty">
+            <div class="name">PROJECT [TBD]</div>
+        </li>
+    </ul>
+    
+</body>
+</html>

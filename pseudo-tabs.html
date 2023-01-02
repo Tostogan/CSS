@@ -1,0 +1,108 @@
+<!-- tab - pseudo selectors-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS PSeudo Selectors</title>
+    <style>
+        .tabs {
+            list-style: none;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid blueviolet
+        }
+
+        .tabs-item {
+            border: 1px solid #ccc;
+            display: inline-block;
+            padding: 10px;
+            margin: 5px;
+
+            width: 70px;
+            height: 80px;
+            vertical-align: top;
+            text-align: center;
+            border-radius: 5px;
+
+            /* NEW */
+            transition: 0.25s;
+        }
+
+        .tabs-item:hover {
+            background-color: pink;
+        }
+
+        .tabs-link {
+            text-decoration: none;
+            color: #222;
+        }
+
+        .tabs-options {
+            font-size: 32px;
+            line-height: 6px;
+
+            background-color: #999;
+            height: 32px;
+            width: 32px;
+            border-radius: 32px;
+            transform: translateX(45px) translateY(-75px);
+
+            /* NEW */
+            opacity: 0;
+            transition: 0.5s;
+        }
+
+        .tabs-options:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <ul class="tabs">
+        <li class="tabs-item">
+            <a class="tabs-link" href="https://github.com/">
+                <img src="https://icons.iconarchive.com/icons/bokehlicia/captiva/48/web-github-icon.png">
+                <br> 
+                GitHub
+            </a>
+
+            <div class="tabs-options">
+                .
+                <br>
+                .
+                <br>
+                .
+            </div>
+        </li>
+        <li class="tabs-item">
+            <a class="tabs-link" href="https://www.facebook.com/vanar.md">
+                <img src="https://icons.iconarchive.com/icons/graphics-vibe/shield-badge-social/48/facebook-icon.png">
+                <br> 
+                facebook
+            </a>
+            <div class="tabs-options">
+                .
+                <br>
+                .
+                <br>
+                .
+            </div>
+        </li>
+        <li class="tabs-item">
+            <a class="tabs-link" href="https://www.youtube.com/watch?v=zJSY8tbf_ys">
+                <img src="https://icons.iconarchive.com/icons/graphics-vibe/neon-glow-social/48/youtube-icon.png">
+                <br> 
+                youtube
+            </a>
+            <div class="tabs-options">
+                .
+                <br>
+                .
+                <br>
+                .
+            </div>
+        </li>
+    </ul>
+    
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!--
+    tag, clas, id
+
+    d. pseudo selectors   https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes
+    + visual feedback
+    + dynamic styling
+    + states (mouse hover, click, checked,...)
+
+    :pseudo {
+
+    }
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS PSeudo Selectors</title>
+    <style>
+        body {
+            background-color: rgb(0, 77, 128);
+        }
+
+        .call-for-action {
+            color: rgb(214, 201, 208);
+            font-family: Arial;
+            border-bottom: 1px dashed rgb(214, 201, 208);
+            padding: 14px;;
+        }
+
+        .btn {
+            font-size: 16px;
+            background-color: rgb(183, 209, 158);
+            border: 2px solid white;
+            padding: 9px 14px;
+            margin:0px 8px 0px 8px;
+ 
+        /* NEW */
+        border-radius: 30px;
+        }
+
+        .btn:hover {
+            color: white;
+            border-color: black;
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <!-- form -->
+    <label class="call-for-action">
+        To start the training hit <button class="btn">this Button</button> !
+    </label>
+    <!-- end/form -->
+    
+</body>
+</html>

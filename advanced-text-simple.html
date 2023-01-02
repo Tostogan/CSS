@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ADVANCED SELECTORS | Text Markup</title>
+    <style>
+        body {
+            background-color: rgb(184, 247, 165);
+            color: black;
+            font-family: Arial;
+        }
+
+        .title .line:first-child .word {
+            /* border: 1px solid green; */
+            font-size: 40px;
+        }
+
+        .title .line:first-child .word span:first-child {
+            color:rgb(172, 26, 216);
+        }
+
+        .title .line:first-child .word span:nth-child(2) {
+            color:rgb(92, 16, 214);
+        }
+
+        .title .line:first-child .word span:nth-child(3) {
+            color:rgb(24, 231, 214);
+        }
+
+        .title .line:first-child .word span:nth-child(4) {
+            color:rgb(30, 236, 140);
+        }
+
+        .title .line:first-child .word span:nth-child(5) {
+            color:rgb(228, 231, 59);
+        }
+
+    </style>
+</head>
+<body>
+    <h1 class="title">
+        <div class="line">
+            <span class="word">
+                <span>F</span><span>I</span><span>R</span><span>S</span><span>T</span>
+            </span> <span class="word">LINE</span>
+        </div>
+
+        <div class="line">
+            <span class="word">SECOND</span> <span class="word">LINE</span>
+        </div>
+    </h1>
+</body>
+</html>

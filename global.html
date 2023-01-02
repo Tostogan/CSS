@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Global CSS | Vertical nav</title>
+
+    <style>
+         /* GLOBAL STYLES */
+         /* a. tag selector (type) */
+         body {
+            background-color: #2F4F4F;
+         }
+         nav {
+            background-color: #5F9EA0;
+         }
+         li {
+            background-color: #008B8B;
+            margin: 5px;
+            padding: 5px;
+         }
+         a {
+            color: white;
+            text-decoration: none;
+         }
+         /* b. class (grup de elemente cu un stil similar...
+         prin acest selector putem grupa mai multe elemente sub un singur stil) selector */
+         .today {
+            color: orange;
+         }
+         .next {
+            color: brown;
+         }
+         /* c. id (identificare) selector */
+         #nav-heading {
+            color: white;
+            padding: 10px;
+            text-align: right;
+         }
+
+    </style>
+
+</head>
+<body>
+    <nav>
+        <h2 id="nav-heading">CSS Selectors</h2>
+        <ul>
+            <li><a href="" class="today">tag</a></li>
+            <li><a href="" class="today">class</a></li>
+            <li><a href="" class="today">id</a></li>
+            <li><a href="" class="next">pseudo</a></li>
+            <li><a href="" class="next">advanced</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Global Gallery | CSS</title>
+    <style>
+        body {
+            background-color: #ffcce0;
+        }
+        img {
+            width: 200px;
+            border: 20px solid #330014;
+
+            margin-right: -122px;  /* (200px:2) + 20px + (4px:2) = 122px */
+            margin-left: -122px;
+
+        }
+        #gallery {
+            margin-top: 100px;
+            text-align: center;
+            /* border: 1px solid brown; */
+        }
+
+        .i-1 {
+           /*---- NEW ----*/
+           transform: rotate(40deg);
+           border-color:  #ff4d94;
+;
+           /*---- NEW ----*/
+        }
+
+        .i-2 {
+           transform: rotate(20deg);
+           border-color: #ff80b3;
+        }
+
+        .i-3 {
+           transform: rotate(0deg);
+           border-color: #ffb3d1;
+        }
+
+        .i-4 {
+           transform: rotate(-20deg);
+           border-color: #ffe6f0;
+        }
+
+        .i-5 {
+           transform: rotate(-40deg);
+           border-color:  #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <!--
+        NOTICE!:
+           parent> child blocks overlap vertical margin at the top and bottom of the parent
+
+
+        ----------------------------------------------------- WINDOW --------------------------------------
+                                                    ^
+                                                    ^
+                                                    ^
+                           ^                        ^
+        ----------- BODY --------  >   ------- P --------
+    -->
+
+    <p id="gallery">
+        <img class="i-1" src="https://i.picsum.photos/id/1079/400/600.jpg?hmac=ZXGtqVfWdJvFquaLdLj30c2-vsp16AW-_bTOezPN9GE" alt="">
+        <img class="i-2"src="https://i.picsum.photos/id/484/400/600.jpg?hmac=7Nb9qfmCDFHJPHpjnyWl7LV09a_5WS537r6fyy2TiDc" alt="">
+        <img class="i-3"src="https://i.picsum.photos/id/461/400/600.jpg?hmac=sKPxueXjA0tZATwWsgmHvBjc0Tf5IsWo3dWgiW7MbII" alt="">
+        <img class="i-4"src="https://i.picsum.photos/id/898/400/600.jpg?hmac=EBKFMlHhgxN7EXlLdMhIUxSOsnZj4ecdV2s-ZNY-JwI" alt="">
+        <img class="i-5"src="https://i.picsum.photos/id/152/400/600.jpg?hmac=24VE99yHAWsiN7TfVNcwOaBbSHpMzc0SzMSTHB6k_TI" alt="">
+
+    </p>
+    
+</body>
+</html>

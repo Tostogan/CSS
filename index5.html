@@ -1,0 +1,88 @@
+<!--
+
+    LOGO / BRANDING EXAMPLE - "dev X team"
+
+    * semnatics
+
+    * fonts
+    * box model
+    * display
+    * transforms
+    * colors/backgrounds
+    * effects
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dev X team | LOGO example</title>
+    <style>
+        @font-face {
+            font-family: coolvetica;
+            src: url(C:\Users\User\Desktop\HTML\CSS\fonts\coolvetica) format("opentype")
+        }
+
+        body {
+            background-color: rgb(236, 241, 152);
+            margin: 50px;
+        }
+
+
+        .brand {
+            /* fallback scheme */
+            font-family: coolvetica, sans;
+            font-size: 500%;
+            text-decoration: none;
+
+            border: 1px dotted darkturquoise;
+
+        }
+
+        .brand,
+        .brand h1,
+        .brand span {
+            display: inline-block;
+        }
+
+        .brand span:first-child {
+            font-size: 120%;
+            transform: translateY(7%); 
+            color:  #00ccff;
+
+        }
+
+        .brand span:nth-child(2) {
+            font-size: 400%;
+            font-weight: 100;
+            margin-left: -27,5%;
+            transform: translateY(24%) scaleX(2);
+            color: #008fb3;
+            background-image: 
+                       linear-gradient(90deg, #884dff, #ddccff);
+
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .brand span:last-child {
+            font-size: 75%;
+            color: #005266;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <!-- "/" - root url -->
+        <a class="brand" href="/">
+            <h1>
+                <span>dev</span> 
+                <span>X</span> 
+                <span>team</span>
+            </h1>
+        </a>
+    </nav>
+    
+</body>
+</html>

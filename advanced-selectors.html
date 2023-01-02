@@ -1,0 +1,145 @@
+<!--
+
+    e. complex / advanced selectors
+
+     * DIRECT DESCENDANT
+
+       sel1 > sel2 > sel3 {
+
+       }
+
+
+     * DESCENDANT / CONTEXTUAL
+
+       sel1  sel2  sel3 {
+
+       }
+       
+
+     * NEXT NEIGHBOUR
+
+       sel1 + sel2 + sel3 {
+
+       }
+
+     * GROUPING / ENUMERATION
+
+       sel1, sel2, sel3 {
+
+       }
+
+     * ATTRIBUTE
+
+       [attribute="value"] {
+
+       }
+
+     * INTERSECTION
+
+       sel1sel2sel3 {
+
+       }
+
+     * UNIVERSAL
+
+       html, body, ... footer {
+
+       }
+-->
+
+<style>
+    ul>li>a {
+
+    }
+
+</style>
+
+<ul>
+    <li><small><a href="">link 1</a></small></li>
+    <li><a href=""></a>link 2</li>
+    <li><a href=""></a>link 3</li>
+</ul>
+<a href="">link</a>
+
+<p>Lorem ipsum dolor sit</p>
+<p>Lorem ipsum dolor sit</p>
+<p>Lorem ipsum dolor sit</p>
+
+<a href="/about">Lorem</a>
+<a href="/help">Lorem</a>
+<a href="/about">Lorem</a>
+<button class="btn">OK</button>
+
+<ul class="first">
+  <li class="first">item 1</li>
+  <li>item 2</li>
+  <li class="last">item 3</li>
+</ul>
+
+<ul>
+  <li class="first">item 1</li>
+  <li>item 2</li>
+  <li class="last">item 3</li>
+</ul>
+
+<ul class="last">
+  <li class="first">item 1</li>
+  <li>item 2</li>
+  <li class="last">item 3</li>
+</ul>
+
+<a href="">Lorem.</a>
+<a href="">Soluta?</a>
+<a href="">Est.</a>
+
+<div id="content">
+  <h1>Title</h1>>
+ <p>Lorem, ipsum dolor.</p>
+ <p>Cum, ad non?</p>
+ <small>* notice........</small>
+ <a href="">READ MORE</a>
+</div>
+
+<style>
+  p, a .btn {
+    color: ...;
+  }
+</style>
+
+<style>
+  [href="/about"] {
+
+  }
+</style>
+
+<style>
+  [class="btn"] {
+
+  }
+
+  [id="my-id"] {
+
+  }
+
+  .li.last {
+
+  }
+
+  a:hover {
+
+  }
+
+  a:first-child:hover {
+
+  }
+
+  #content>h1,
+  #content>p,
+  #content>a {
+
+  }
+
+  #content>* {
+    
+  }
+</style>

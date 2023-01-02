@@ -1,0 +1,125 @@
+<!--
+    CAROUSEL with REFLECTION
+
+    * selectors
+    * box
+    * transforms
+    * colors
+    * backgrounds
+    * effects
+    * animations
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CAROUSEL with REFLECTION
+    </title>
+        <style>
+            body {
+                background-image: linear-gradient(90deg, rgb(243, 120, 49), rgb(106, 107, 105), black, yellowgreen, rgb(115, 207, 235));
+            }
+
+            .carousel {
+                border: 3px solid rgb(236, 97, 4);
+                width: 800px;
+                height: 600px;
+                margin: 100px auto;
+
+                overflow:hidden;
+            }
+
+            .carousel .track {
+                border: 3px solid rgb(70, 206, 230);
+                width: 3000px;
+
+                animation: slide 20s linear infinite;
+            }
+
+            .carousel .slide {
+                border: 2px solid rgb(65, 236, 236);
+                display: inline-block;
+                margin-left: 100px;
+                margin-right: 100px;
+            }
+
+            .carousel .slide img {
+                display: block;
+            }
+
+            .carousel .slide .reflection {
+                width: 600px;
+                height: 200px;
+
+                background-size: 100% 100%;
+                transform: scaleY(-1);
+                /* margin-top: 5px; */
+                /* filter: blur(3px); */
+            }
+
+            .carousel .slide:nth-child(1) .reflection {
+                background-image: 
+                linear-gradient(rgb(255, 102, 0), transparent),
+                url(https://i.picsum.photos/id/564/600/400.jpg?hmac=OmYp9cwndfkSfjpoQ7sCXjADuN_e5wn9g2iaCvX2Iic);
+
+            }
+
+            .carousel .slide:nth-child(2) .reflection {
+                background-image: 
+                linear-gradient(white, transparent),
+                url(https://i.picsum.photos/id/969/600/400.jpg?hmac=b1qM4NST-I8onupY3rNa3y8wHP_jknRxCefHVD4gOQE);
+
+            }
+
+            .carousel .slide:nth-child(3) .reflection {
+                background-image: 
+                linear-gradient(rgb(144, 228, 231), transparent),
+                url(https://i.picsum.photos/id/733/600/400.jpg?hmac=2b3xyYaySTUC4Z7pEDUgalEYaLcyk4okCEGMt2H_3FE);
+
+            }
+
+            @keyframes slide {
+                0%     { margin-left: 0;         }
+                25%    { margin-left: 0;         }
+                33.33% { margin-left: -800px;    }
+                58.33% { margin-left: -800px;    }
+                66.66% { margin-left: -1600px;   }
+                91.66% { margin-left: -1600px;   }
+
+
+
+                }
+                to {
+                    margin-left: -1600px;
+
+                }
+            }
+
+            
+
+
+        </style>
+</head>
+<body>
+    <section class="carousel">
+        <div class="track">
+
+        <div class="slide">
+            <img src="https://i.picsum.photos/id/564/600/400.jpg?hmac=OmYp9cwndfkSfjpoQ7sCXjADuN_e5wn9g2iaCvX2Iic" alt="slide 1">
+            <div class="reflection"></div>
+        </div>
+        <div class="slide">
+            <img src="https://i.picsum.photos/id/969/600/400.jpg?hmac=b1qM4NST-I8onupY3rNa3y8wHP_jknRxCefHVD4gOQE" alt="slide 2">
+            <div class="reflection"></div>
+        </div>
+        <div class="slide">
+            <img src="https://i.picsum.photos/id/733/600/400.jpg?hmac=2b3xyYaySTUC4Z7pEDUgalEYaLcyk4okCEGMt2H_3FE" alt="slide 3">
+            <div class="reflection"></div>
+        </div>
+        </div>
+    </section>
+    
+</body>
+</html>

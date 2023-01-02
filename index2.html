@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>BLOCK ALIGNMENT</title>
+    <style>
+        .header, .content, .footer {
+border: 1px solid black;
+padding: 20px;
+        }
+
+        .event-main,
+        .event-second,
+        .event-third {
+            border: 5px dashed gray;
+
+            float: left;
+            box-sizing: border-box;
+            
+        }
+
+        html {
+            height: 100%;
+        }
+ 
+        body {
+            height: 100%;
+        }
+        .content {
+            height: 50%; /* OF PARENT ELEMENT */
+        }
+
+        .event-main {
+            height: 100%;
+            width: 60%;
+
+            margin-right: 10%;
+        }
+
+        .event-second {
+            margin-bottom: 5vh;
+        }
+
+        .event-second,
+        .event-third {
+            height: 45%;
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+
+    <!--
+        BLOCK ALIGNMENT
+        * semantics
+        * layouting / UI
+        * box model / box sizing
+        * float / clearing
+        * alignment
+        * selectors
+
+        --------------------- HEADER ------------------
+        |                                             |
+        |                                             |
+        |                                             |
+        -------------------- HEADER -------------------
+        -------------------- CONTENT ------------------
+        |                                | |        | |
+        |                                | |   OLD  | |
+        |                                | | EVENT 1| |
+        |           MAIN EVENT           | ---------- |
+        |                                | ---------- |
+        |                                | |   OLD  | |
+        |                                | | EVENT 2| |
+        |                                | |        | |
+        ---------------------------------- ---------- |
+        -------------------- CONTENT ------------------
+        -------------------- FOOTER -------------------
+        |                                             |
+        |                                             |
+        -------------------- FOOTER ------------------
+
+
+        HW1: 
+
+        --------------------- HEADER ------------------
+        |                                             |
+        |                                             |
+        |                                             |
+        -------------------- HEADER -------------------
+        -------------------- CONTENT ------------------
+        |                                             |
+        |                                             |
+        |             MAIN EVENT                      |
+        |                                             |
+        |                                             |
+        |---------------------------------------------|
+        |                  |    |                     |                                          
+        |                  |    |                     | DIMENSIUNILE LA ALEGERE
+        ----------------------------------------------|
+        -------------------- CONTENT ------------------
+        -------------------- FOOTER -------------------
+        |                                             |
+        |                                             |
+        -------------------- FOOTER -------------------
+
+
+    -->
+
+    <header class="header">
+        HEADER
+    </header>
+
+    <section class="content">
+        
+    <main class="event-main">
+        MAIN EVENT
+    </main>
+    <article class="event-second">
+        OLD EVENT 1
+    </article>
+    <article class="event-third">
+        OLD EVENT 2
+    </article>
+    </section>
+
+    <footer class="footer">
+        FOOTER
+    </footer>
+
+</body>
+</body>
+</html>
+
+
+<!--
+
+    HEIGHT: auto calcultion (auto regimul de calculare al inaltimii se face de jos in sus)
+            height: 100%; (nu functioneaza, pt ca browserul incearca sa determine procentele, luind in calcul 
+            elementul parinte)
+
+    window
+       |
+       html
+       \
+       body   100%
+       \
+       ...
+       section  2) 3 x 28 + 2 x 20 = 100%   // 50%
+            \
+             | -- main     18 + 2 x 5 = 28  1)      height 100%
+             | -- article  18 + 2 x 5 = 28
+             | -- article  18 + 2 x 5 = 28
+       ...
+
+
+        BLOCKS in LINE / ROW / COLS
+        float 
+        display: table-*, inline-block, grid, flex
+
+-->
+
+<!--
+
+    MAIN                       second, third
+
+
+
+    
+    +5px                       +5px
+    |                           |
+    |                           45%
+    |                           |
+    |                           +5px
+    100%                        V
+    |                           10%                   
+    |                           +5px 
+    |                           |
+    |                           45%
+    +5px                        |
+                                +5px
+
+100% + 10px                 100% + 20px
+
+
+
+-->

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>AD Jeans Pockets</title>
+    <style>
+        
+        /* reset styles */
+        /* grouping selector */
+        body {
+            font-family: 'Courier New';
+        }
+        body, h1, p {
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* layout */
+        .ad {
+           /* border: 1px solid black; */
+
+           border-radius: 10px 10px 50px 50px;
+           margin: 50px;
+           padding: 50px;
+           
+
+           text-align: center;
+
+           color: white;
+           background-image: linear-gradient(#4194BE, #F8FAF9);
+           background-size: 5px 5px;
+           /* background-size: 100px 100px;
+           background-repeat: no-repeat;
+           background-position: center center; */
+
+        }
+        .ad-string {
+            border: 4px dashed yellow;
+            border-top: none;
+
+            padding: 30px;
+            padding-top: 400px;
+            border-radius: 0 0 15px 15px;
+        }
+
+        .ad-title {
+            margin-bottom: 30px;
+        }
+        .ad-btn {
+            color: orangered;
+        }
+        .ad-btn:hover {
+            color: whitesmoke;
+            background-color: orchid;
+            padding: 5px 20px;
+            border-radius: 20px;
+        }
+
+    </style>
+</head>
+<body>    
+
+
+    <!-- this is a SHOP PAGE -->
+    <!--
+        * SEMANTIC
+        * selectors, +child, +pseudo
+        * box model
+        * font
+        * colors
+        * effects
+    -->
+
+
+    <!-- navbar -->
+    <!-- header -->
+
+    <!-- ad section -->
+
+    <section class="ad">
+        <div class="ad-string">
+        <h1 class="ad-title">
+            Our Pocket will look great<br>
+            <small>on your <a class="ad-btn" href="#">a...</a></small>
+        </h1>
+        <p>
+            * we make the best pocket designs in the world *
+        </p>
+        </div>
+    </section>
+
+    <!-- content -->
+
+    <!-- footer -->
+
+    
+</body>
+</html>
+
+
+<!--
+    CSS: inheritance (mostenire), overriding, cascading
+
+    section.ad <- overriding -- color: white (sectiunea, din start, avea culoarea neagra, 
+    dar noi am schimbat in culoarea alba, apoi browserul a continuat cu schema de mostenire, 
+    transmitind culoarea data celorlalti)
+        |
+        v
+        h1        + color: white
+        |
+        v
+        small     + color: white
+        |
+        v
+        a         - color: white  <- default -- color: blue
+                  <- overriding -- color: orange
+    
+        inheritance   default   overrides
+    --------------------------------------------- >
+
+-->
+
+<!--
+
+    tag, class, id: selector { static styles }
+        |
+        |
+        |
+        v
+     element  <---- pseudo: selector { dynamic styles }
+
+-->
